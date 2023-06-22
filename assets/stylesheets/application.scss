@@ -1,0 +1,166 @@
+@import "./fonts.scss";
+@import "./color.scss";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Lato';
+}
+
+h1 {
+    font-family: 'Ubuntu-Bold';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+h2 {
+    font-family: 'Ubuntu-Bold';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+
+}
+
+h3 {
+    font-family: 'Ubuntu-Bold';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+
+}
+
+h4 {
+    font-family: 'Mulish';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+}
+
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.center {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+label {
+    letter-spacing: 1px;
+    font-family: 'Lato-SemiBold';
+}
+
+button {
+    cursor: pointer;
+}
+
+input[type=text],
+input[type=date],
+input[type=number] {
+    height: 2.5rem;
+    border: solid #666666 1px;
+    border-radius: .2rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-family: 'Lato';
+    color: var(--black-light);
+}
+
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=date]:focus {
+    outline: none;
+    border: solid var(--blue) 1px;
+}
+
+select {
+    height: 2.8rem;
+    border: solid #666666 1px;
+    border-radius: .2rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-family: 'Lato';
+    color: var(--black-light);
+}
+
+select:focus {
+    outline: none;
+    border: solid var(--blue) 1px;
+}
+
+
+//botões
+.btn-primary {
+    color: var(--white-light);
+    font-family: 'Lato-Bold';
+    height: 48px;
+    padding: 0 32px;
+    border-radius: .25rem;
+    background: linear-gradient(to left bottom, #0C5FBA, #0C77CA);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding: .5rem 2rem;
+    border: none;
+    transition: ease-in-out .15s;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: var(--blue-dark);
+    background: linear-gradient(to left bottom, #3784F2, #3784F2)
+}
+
+.btn-secondary {
+    display: block;
+    margin: 2rem auto;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--white-light);
+    padding: 0.5rem 1rem;
+    width: 10rem;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    transition: 0.2s ease-in-out;
+
+    img {
+        max-height: 4rem;
+    }
+}
+
+.btn-secondary:hover {
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn-return {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+}
